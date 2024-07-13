@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 20, 20, 20;
+  --background-end-rgb: 0, 0, 0;
+}
+
+body {
+  background: linear-gradient(to bottom, rgba(var(--background-start-rgb)), rgba(var(--background-end-rgb)));
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  padding: 20px;
+}
+
+.movie-card {
+  background: #333;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.movie-card img {
+  border-radius: 5px;
+}
+
+.movie-card .card-body {
+  padding: 10px;
+}
+
+.star-rating {
+  direction: rtl;
+  font-size: 0;
+  unicode-bidi: bidi-override;
+}
+
+.star-rating input[type="radio"] {
+  display: none;
+}
+
+.star-rating label {
+  font-size: 1.5rem;
+  color: #ccc;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label,
+.star-rating input[type="radio"]:checked ~ label {
+  color: #f5a623;
+}
+
+.gradient-custom {
+  background: linear-gradient(to bottom, rgba(2, 52, 76, 0.5), rgba(100, 6, 107, 0.5));
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.gradient-customs {
+  background: linear-gradient(to bottom, rgba(196, 173, 3, 0.5), rgba(95, 35, 96, 0.5));
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.custom-caption {
+  padding: 16px;
+  gap: 8px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.carousel-item img {
+  transition: transform 0.2s ease-in-out;
+}
+
+.carousel-item:hover img {
+  transform: scale(1.05);
+}
+
+.onsearch {
+  padding-top: 3px;
+}
+
+.okay {  
+  padding-top: 0;
+  border-radius: 20px;
+  
+}
+
+.checkbg {
+  background: #17b209;
+  width: 130px;
+  
+}
+
